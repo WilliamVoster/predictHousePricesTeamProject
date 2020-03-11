@@ -1,0 +1,47 @@
+body{
+    background: #246246;
+    color: white;
+    font-family: sans-serif;
+    width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 1em;
+
+
+    a{
+        background: white;
+        color: #333;
+        padding: 1em;
+        position: fixed;
+        top: 50px;
+        left: 70px;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+        background: #333;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(20, 1fr);
+
+        label{
+            grid-column: 1 / span 1;
+        }
+        input, select{
+            grid-column: 2 / span 1;
+        }
+        input[type="submit"]{
+            border: none;
+            // padding: 1em;
+            width: 150px;
+            background: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background: #444;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+body {
+  background: #246246;
+  color: white;
+  font-family: sans-serif;
+  width: 60vw;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+body a {
+  background: white;
+  color: #333;
+  padding: 1em;
+  position: fixed;
+  top: 50px;
+  left: 70px;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: white;
+  background: #333;
+}
+
+body form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: (1fr)[20];
+      grid-template-rows: repeat(20, 1fr);
+}
+
+body form label {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+}
+
+body form input, body form select {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+}
+
+body form input[type="submit"] {
+  border: none;
+  width: 150px;
+  background: white;
+  cursor: pointer;
+}
+
+body form input[type="submit"]:hover {
+  background: #444;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
